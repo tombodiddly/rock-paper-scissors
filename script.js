@@ -18,6 +18,7 @@ function computerPlay () {
 
 let computerSelection = computerPlay();
 let playerSelection = prompt("Enter your guess... \n'rock', 'paper', or 'scissors'").toLowerCase();
+
 //const playerSelection = "paper";
 
 //console.log(computerSelection);
@@ -72,6 +73,7 @@ let computerScore = 0;
 function game(){
     while (gameCount<2){
         playRound(computerSelection,playerSelection);
+        console.log("Round: "+gameCount+" - "+"Computer Choice: "+computerSelection+" --- "+"Player Choice: "+playerSelection);
         console.log("Round: "+gameCount+" - "+"Computer Choice: "+computerSelection+" --- "+"Player Choice: "+playerSelection);
         console.log(playRound(computerSelection,playerSelection));
         if (playRound(computerSelection,playerSelection).match(/[!]/)){
