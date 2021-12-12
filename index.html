@@ -5,16 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rock-paper-scissors</title>
-    <script src="script.js"></script>
+    <script src="script.js"defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>"rockPAPERscissors"</h1>
-    <p id="value-1"></p>
-    <p id="value-2"></p>
-    <p id="value-3"></p>
-    <p id="value-4"></p>
-    <p id="value-5"></p>
+    <h1>rockPAPERscissors.</h1>
+    <div id="gameboard" class="gameboard">
+        <div class="choices">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
+    
+        <div id="roundInfo" class="roundInfo">
+            <div class="matchup">
+                <p id="upper"></p>
+                <p id="vs"></p>
+                <p id="lower"></p>
+            </div>
+            <p id="message"></p>
+        </div>
+    
+        <div id="scoreboard" class="scoreboard">
+            <div class="score">
+                <p>Your Score: </p>
+                <p id="player"></p>
+            </div>
+            <div class="score">
+                <p>Computer Score: </p>
+                <p id="computer"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="results" class="results">
+        <h2>FINAL SCORE</h2>
+        <p id="finalScore"></p>
+        <p id="winner"></p>
+        <button id="tryAgain"></button>
+    </div>
     
     
 </body>
+<script>
+    
+</script>
 </html>
